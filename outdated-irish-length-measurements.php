@@ -12,16 +12,19 @@ if($_POST['submit']) {
   $from_unit = $_POST['from_unit'];
   $to_unit = $_POST['to_unit'];
   
-  $to_value = convert_volume($from_value, $from_unit, $to_unit);
+  $to_value = convert_length($from_value, $from_unit, $to_unit);
 }
 
 $volume_options = array(
-  'bucket',
-  'butt',
-  'firkin',
-  'hogshead',
-  'pint',
-  'gallons'
+  'grain',
+  'thumb-length',
+  'palm',
+  'fist',
+  'foot',
+  'step',
+  'doublestep',
+  'rod',
+  'centimeter'
 );
 
 ?>
@@ -29,7 +32,7 @@ $volume_options = array(
 
     <div id="main-content">
 
-      <h1>Convert Volume</h1>
+      <h1>Convert Outdated Irish Length Measurements</h1>
   
       <form action="" method="post">
         
